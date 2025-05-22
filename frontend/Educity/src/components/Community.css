@@ -1,0 +1,155 @@
+/* General Styling */
+.community-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #4b7997; /* Main container background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff; /* White text for contrast */
+}
+
+/* Create Post Section */
+.create-post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background: rgb(9, 80, 128); /* Dark blue for contrast */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.create-post textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  transition: border-color 0.3s;
+}
+
+.create-post textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.create-post button {
+  padding: 10px;
+  border: none;
+  background: #0066cc; /* Slightly darker blue to match */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.create-post button:hover {
+  background: #005bb5; /* Darker shade for hover effect */
+}
+
+/* Post List */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post {
+  background: #4b7997; /* Matching background color */
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.post p{
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+
+.post:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.vote-buttons button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* Upvote / Downvote */
+.vote-buttons .upvote {
+  color: #28a745; /* Green for upvote */
+}
+
+.vote-buttons .downvote {
+  color: #dc3545; /* Red for downvote */
+}
+
+.vote-buttons button:hover {
+  transform: scale(1.2);
+}
+
+/* Comments Section */
+.comments {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.comments h4 {
+  margin-bottom: 5px;
+  color: #ffffff; /* White text for contrast */
+}
+
+.comments ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comments li {
+  padding: 5px;
+  background: #176972; /* Matching background color for comments */
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.comments textarea {
+  width: 100%;
+  height: 60px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+.comments button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background: #28a745; /* Green for comment button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.comments button:hover {
+  background: #218838; /* Darker green for hover */
+}

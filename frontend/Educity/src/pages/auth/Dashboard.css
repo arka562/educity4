@@ -1,0 +1,210 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('/assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.dashboard-header h1 span {
+  color: #ffdd57; 
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logout-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+.dashboard-content {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-content h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid white; 
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.dashboard-content p {
+  font-size: 1rem;
+  color: #ddd; 
+  margin-bottom: 1rem;
+}
+
+
+.dashboard-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-list li {
+  background: rgba(255, 255, 255, 0.1); 
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 15px rgba(255, 255, 255, 0.5);
+}
+
+
+.goal-form {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.goal-form input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: border-color 0.3s ease;
+}
+
+.goal-form input:focus {
+  border-color: #ffdd57;
+  outline: none;
+}
+
+.goal-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.goal-form button:hover {
+  background-color: #1a5bbf;
+  transform: scale(1.05);
+}
+
+
+.dashboard-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard-links li {
+  margin-bottom: 0.75rem;
+}
+
+.dashboard-links a,
+.dashboard-links button {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dashboard-links a:hover,
+.dashboard-links button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateX(10px);
+}
+
+
+.rate-us-button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rate-us-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Loading Message */
+.loading-message {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #ffdd57;
+  margin-top: 2rem;
+}

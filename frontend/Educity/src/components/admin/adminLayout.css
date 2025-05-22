@@ -1,0 +1,41 @@
+/* Layout wrapper for admin panel */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar wrapper (can use this or extend from admin.css) */
+.admin-layout-sidebar {
+  width: 220px;
+  background-color: burlywood;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Main content area */
+.admin-layout-content {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Sticky header inside content if needed */
+.admin-layout-header {
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* General utility */
+.admin-layout h1,
+.admin-layout h2,
+.admin-layout h3 {
+  color: #333;
+}

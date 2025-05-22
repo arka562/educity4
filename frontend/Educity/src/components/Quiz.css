@@ -1,0 +1,161 @@
+/* General Styles */
+.quiz-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #555;
+}
+
+/* Progress Bar */
+.progress {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.timer {
+  background: #ff5252;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.timer.warning {
+  background: #ffa726;
+}
+
+/* Question Card */
+.question-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #222;
+  font-size: 18px;
+}
+
+/* Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  background: #e3f2fd;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background: #bbdefb;
+}
+
+.option.selected {
+  background: #42a5f5;
+  color: white;
+}
+
+/* Navigation Buttons */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  background: #42a5f5;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #1e88e5;
+}
+
+button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}
+
+/* Submit Button */
+.submit {
+  background: #4caf50;
+}
+
+.submit:hover {
+  background: #388e3c;
+}
+
+/* Quiz Expired */
+.quiz-expired {
+  text-align: center;
+}
+
+.quiz-expired h2 {
+  color: #d32f2f;
+}
+
+.quiz-expired button {
+  background: #ff5252;
+}
+
+.quiz-expired button:hover {
+  background: #d32f2f;
+}
+
+/* Quiz Results */
+.quiz-results {
+  text-align: center;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.score.pass {
+  color: #2e7d32;
+}
+
+.score.fail {
+  color: #d32f2f;
+}
+
+.back-button {
+  background: #ff9800;
+}
+
+.back-button:hover {
+  background: #f57c00;
+}
